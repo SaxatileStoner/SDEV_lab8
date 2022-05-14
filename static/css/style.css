@@ -1,0 +1,28 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+
+img{
+    width: 35%;
+    height: auto;
+}
+
+table{
+    border-color: black;
+    border-style: solid;
+    border-width: .25em;
+}
+
+th{
+    padding: 10px;
+}
+
+td{
+    padding: 10px;
+}
+
+.content{
+    padding: auto;
+    margin: auto;
+}

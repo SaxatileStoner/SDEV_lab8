@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+<!--images.html head-->
+{% block head %}
+<title>lab7/images</title>
+{% endblock head %}
+
+
+<!--images.html body-->
+{% block body %}
+<div class="content">
+    <div class="container">
+        <h1>images.html</h1>
+        <p>Contains 4 photography images from last lab assignment</p>
+    </div>
+    <div class="container">
+        <div class="images">
+            <!--Contains images-->
+            <img src="/static/img/BlueRidge-MountainRoad1.png" 
+            alt="Foggy road in the Blue Ridge Mountains">
+            <img src="/static/img/BlueRidge-MountainTunnel1.png"
+            alt="Foggy road in the Blue Ridge Mountains leading towards a distant tunnel">
+            <img src="/static/img/CherokeeDuck1.png" 
+            alt="Duck floating in a mountain stream">
+            <img src="/static/img/LEWaterfallCherokee1.png" 
+            alt="Long exposure of a waterfall in the Blue Ridge Mountains">
+        </div>
+    </div>
+</div>
+{% endblock body %}

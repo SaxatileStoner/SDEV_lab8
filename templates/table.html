@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+<!--table.html head-->
+{% block head %}
+<title>lab7/table</title>
+{% endblock head %}
+
+<!--table.html body-->
+{% block body %}
+<div class="content">
+    <div class="container">
+        <h1>table.html</h1>
+        <p>Contains a table of 4 rows and 3 cols</p>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Language</th>
+                <th>Human Language?</th>
+                <th>Programming Language?</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>No</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>Yes</td>
+                <td>No</td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div class="container">
+        <h2>Python</h2>
+        <p>Is a programming language used and read by a machine to carry out certain tasks.
+        </p>
+        <h2>HTML</h2>
+        <p>Is niether a programming language or human language. 
+            it may be interpreted by a machine, but it's markup language with no 
+            logical functions or expression. Must rely on a backend to carry out tasks 
+            other than markup text.
+        </p>
+        <h2>English</h2>
+        <p>Is one of the many human languages used to communicate in both writing and
+            speech between two or more people.
+        </p>
+    </div>
+</div>
+{% endblock body %}

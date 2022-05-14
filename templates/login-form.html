@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>lab7/login</title>
+{% endblock head %}
+
+
+{% block body %}
+<div class="content">
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p>{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+    <form method="post">
+        <label for="email">Email: </label>
+        <input type="email" 
+        placeholder="example@example.com" 
+        value="{{ request.form['email'] }}" 
+        id="email"
+        name="email"/>
+
+        <label for="password">Password: </label>
+        <input type="password" 
+        placeholder="Password" 
+        value="{{ request.form['password'] }}"
+        id="password"
+        name="password"/>
+        <br/>
+
+        <input type="submit" value="submit">
+    </form>
+</div>
+{% endblock body %}

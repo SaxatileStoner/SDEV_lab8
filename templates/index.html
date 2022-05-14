@@ -1,0 +1,20 @@
+<!-- First page to be loaded and directs user to examples -->
+{% extends 'base-index.html' %}
+
+<!--index.html head-->
+{% block head %}
+<title>lab7/index</title>
+{% endblock head %}
+
+<!--index.html body-->
+{% block body %}
+<div class="content">
+	<div class="container">
+		<a href="{{ url_for('images') }}">images.html</a>
+		<a href="{{ url_for('table') }}">table.html</a>
+		<a href="{{ url_for('register') }}">register-form.html</a>
+		<a href="{{ url_for('login') }}">login-form.html</a>
+		<a href="{{ url_for('update_pass') }}">update-password.html</a>
+	</div>
+</div>
+{% endblock body %}
